@@ -33,17 +33,17 @@ We use `hydra` for experiment logging and configuration. Simulations are run by 
 
 - To train a 3-Layer MLP with classic backprop on Fashion-MNIST:
 ```
-python main.py +dataset=fmnist model/vf=non-dale trainer=bp model.vf.nb_hidden=3
+python main.py dataset=fmnist model/vf=non-dale trainer=bp model.vf.nb_hidden=3
 ```
 
 - To train a 3-Layer MLP with dis-inhibitory control using the "exact inverse" learning rule:
 ```
-python main.py +dataset=fmnist model/vf=dale trainer=exact-inv model.vf.nb_hidden=3
+python main.py dataset=fmnist model/vf=dale trainer=exact-inv model.vf.nb_hidden=3
 ```
 
 - To train a 3-Layer MLP with dis-inhibitory control using the "linear threshold" learning rule:
 ```
-python main.py +dataset=fmnist model/vf=dale trainer=lin-thresh model.vf.nb_hidden=3
+python main.py dataset=fmnist model/vf=dale trainer=lin-thresh model.vf.nb_hidden=3
 ```
 
 To train networks on MNIST instead of Fashion-MNIST, simply change `fmnist` to `mnist` in the commands above. To use the average Jacobian as feedback weights, add `trainer.average_fb_weights=True` to the commands.
