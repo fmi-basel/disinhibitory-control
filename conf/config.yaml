@@ -1,0 +1,27 @@
+# Main config file for InControl
+
+defaults:
+  - hydra: default
+  - optimizer: adam
+  - model: default
+  - dataset: fmnist
+  - trainer: bp
+  - _self_
+
+out_dir : out/  # Directory to save model and log files.
+
+# RNG
+seed: False  # Random seed. If False, use random seed
+
+# Performance
+device : 'gpu'  # 'cpu' or 'gpu'
+gpu_id : 0      # GPU ID to use
+
+# Training
+epochs: 50
+batchsize: 100
+
+# Debugging
+OL_eval_on_train: False # Whether to evaluate on a subset of the training set 
+                        # in open-loop evaluation 
+                        # (usually for debugging)

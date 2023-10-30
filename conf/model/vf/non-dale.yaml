@@ -1,0 +1,19 @@
+# Refactor Sep/Oct 2023
+# Fully connected non-dalian vectorfield
+
+defaults:
+  - activation: softrelu
+  - controller: leaky-pi
+  - vf_defaults
+  - _self_
+
+_target_: src.models.nondale.vf.FullyConnectedVectorField
+
+# Architecture
+nb_hidden: 3
+sizes_hidden: [256]
+use_bias: True
+
+# Dynamics
+tau: 10e-3
+fb_to_readout: True

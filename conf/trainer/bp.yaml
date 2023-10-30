@@ -1,0 +1,5 @@
+defaults: 
+  - _self_
+
+loss: ${dataset.loss}
+_target_: src.core.trainer.BPTrainer

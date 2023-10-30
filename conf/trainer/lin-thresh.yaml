@@ -1,0 +1,9 @@
+defaults: 
+  - dale_defaults
+  - _self_
+
+_target_: src.models.dale.trainer.AvgInhTaylorApproxTrainer
+
+# Linear approximation
+avg_inh_lambda: 1.0
+avg_inh_init: 0.8

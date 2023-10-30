@@ -1,0 +1,18 @@
+defaults:
+  - activation/softrelu@actE
+  - activation/softrelu@actI
+  - controller: leaky-pi
+  - vf_defaults
+  - _self_
+
+_target_: src.models.dale.vf.FullyConnectedDalianVectorField
+
+# Architecture
+nb_hidden: 3
+sizes_hidden: [256]
+use_bias: True
+tauI: 5e-3
+tauE: 20e-3
+
+# Dynamics
+fb_to_readout: True

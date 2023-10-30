@@ -1,0 +1,22 @@
+#numerical
+numpy
+jax
+jaxlib
+diffrax
+flax
+optax
+tensorflow-cpu
+tensorflow-datasets
+
+# config
+omegaconf
+hydra-core
+hydra-colorlog
+
+#plotting
+matplotlib
+mycolorpy
+spiffyplots
+
+#jupyter
+ipykernel

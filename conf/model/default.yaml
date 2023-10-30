@@ -1,0 +1,15 @@
+defaults:
+  - vf: non-dale
+  - _self_
+
+_target_: src.core.Model
+
+# Diffrax parameters
+dt: 1e-3
+T: 2.0
+rtol: 1e-3
+atol: 1e-6
+solver: 
+  _target_: diffrax.Tsit5
+adaptive_stepsize: True
+early_termination: True

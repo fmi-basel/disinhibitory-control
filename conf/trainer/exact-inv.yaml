@@ -1,0 +1,5 @@
+defaults: 
+  - dale_defaults
+  - _self_
+
+_target_: src.models.dale.trainer.ExactTrainer
