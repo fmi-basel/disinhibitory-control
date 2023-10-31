@@ -1,6 +1,6 @@
 # Dis-inhibitory neuronal circuits can control the sign of synaptic plasticity
 
-This repository contains the code associated with the NeurIPS 2023 paper "Dis-inhibitory neuronal circuits can control the sign of synaptic plasticity".
+This repository contains the code associated with the NeurIPS 2023 [paper](https://arxiv.org/abs/2310.19614) "Dis-inhibitory neuronal circuits can control the sign of synaptic plasticity".
 
 ## Installation
 
@@ -49,6 +49,20 @@ python main.py dataset=fmnist model/vf=dale trainer=lin-thresh model.vf.nb_hidde
 To train networks on MNIST instead of Fashion-MNIST, simply change `fmnist` to `mnist` in the commands above. To use the average Jacobian as feedback weights, add `trainer.average_fb_weights=True` to the commands.
 
 All other simulation parameters can be be overridden using the same syntax as above or changed in the `conf` directory (refer to the https://hydra.cc/ documentation for details on the configuration files).
+
+## Citation
+```
+@article{Rossbroich2023-DisinhControl,
+      title={Dis-inhibitory neuronal circuits can control the sign of synaptic plasticity}, 
+      author={Julian Rossbroich and Friedemann Zenke},
+      year={2023},
+      eprint={2310.19614},
+      archivePrefix={arXiv},
+      journal={arXiv}
+      primaryClass={q-bio.NC}
+}
+```
+
 
 
 
